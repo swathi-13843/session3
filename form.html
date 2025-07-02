@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>contact form</h2>
+    <form action="https://www.mrec.ac.in/">  <!-- action attribute specifies where to send the form data when the form is submitted -->
+    <label>name:</label><br>  <!-- label element defines a label for an input element -->
+    <input type="name" placeholder="enter your name"><br>   <!-- input element defines an input field where the user can enter data -->
+    <label>Email:</label><br>
+    <input type="email" placeholder="enter your email"><br>  <!-- input type="email" specifies that the input field should accept an email address -->
+    <label>password:</label> <br>
+    <input type="password" placeholder="enter your password"><br> <!--placeholder=-->
+    <label>gender:</label>
+    <br>
+    <input type="radio" id="male" name="gender" value="male"> <!-- radio button allows the user to select one option from a set -->
+    <label for="male">male</label> <!-- the 'id' attribute in input element associates the label with the input element --> 
+                                                 <!-- the 'value' attribute specifies the value to be sent to the server when the form is submitted -->
+    <input type="radio" id="female" name="gender" value="female" >  <!-- the 'for' attribute in label associates the label with the input element -->
+    <label for="female">female</label> <!-- the 'name' attribute groups radio buttons together so that only one can be selected at a time -->
+    <br>
+    <label>country:</label>
+    <br>
+    <select name="country" id="country"> <!-- select element creates a dropdown list(checkbox) -->
+        <option value="india">India</option> <!-- option element defines an option in the dropdown list -->
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="germany">Germany</option>
+        <option value="france">France</option>
+        <br>
+    </select>
+    <br>
+    <label>comments:</label> 
+    <br>    
+    <textarea name="comments" id="comments" cols="30" rows="10" placeholder="enter your comment"></textarea>  <!-- textarea element defines a multi-line text input field -->
+    <br>
+    <label for="">Describe yourself:</label>
+    <br>
+    <input type="checkbox" id="student" name="student" value="student">
+    <label for="student">Student</label> <!-- checkbox allows the user to select one or more options -->
+    <input type="checkbox" id="employee" name="employee" value="employee">
+    <label for="employee">Employee</label>
+    <input type="checkbox" id="other" name="other" value="other">
+    <label for="other">Other</label>
+    <br>
+
+    <input type="submit">
+    </form>
+</body>
+</html>
